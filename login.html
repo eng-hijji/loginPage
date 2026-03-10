@@ -4,18 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    form{
+      width: 500px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      border-width: 2px;
+      border-style: solid;
+      padding: 15px 20px;
+      display: grid;
+    }
+    div{
+      display: flex;
+      
+    }
+    label{
+      flex-grow: 1;
+    }
+    input{
+      flex-grow: 5;
+    }
+  </style>
 </head>
 <body>
   <form>
     <h1>login form</h1>
+    <div>
     <label for="First Name">Name:</label>
-    <input id="First Name" placeholder="eg:Mohammed" required type="text">
+    <input id="First Name" placeholder="eg:Mohammed" required type="text"></div>
+    <div>
     <label for="second Name">second name</label>
-    <input id="second Name" required placeholder="Hijji">
+    <input id="second Name" required placeholder="Hijji"></div>
+    <div>
     <label for="email">Enter Email</label>
-    <input id="email" type="email" required placeholder="mo***@gmail.com">
+    <input id="email" type="email" required placeholder="mo***@gmail.com"></div>
+    <div>
     <label for="password">password</label>
-    <input id="password" type="password" required placeholder="*********">
+    <input id="password" type="password" required placeholder="*********"></div>
   </form>
 </body>
 </html>
